@@ -63,6 +63,8 @@ if selected=="Projects":
 
       with col1:
           Pregnancies = get_float_input('Number of Pregnancies')
+      max=ser_col1.slider("values",min_value=10,max_value=90)
+                        
 
       with col2:
           Glucose = get_float_input('Glucose Level')
