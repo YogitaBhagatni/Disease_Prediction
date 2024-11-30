@@ -40,7 +40,15 @@ if selected=="Projects":
                              icons=['activity', 'heart', 'person'],
                              default_index=0)
 
-
+  def get_float_input(label):
+     while True:
+        user_input = st.number_input(label)
+        try:
+            float_value = float(user_input)
+            return float_value
+        except ValueError:
+            st.error("Please enter a valid float number.")
+    
   # Diabetes Prediction Page
   if selected == 'Diabetes Prediction':
 
