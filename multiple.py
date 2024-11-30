@@ -29,7 +29,7 @@ if selected=="Projects":
 
   parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_model.sav', 'rb'))
 
-  def get_float_input(label, placeholder=""):
+  def get_float_input(label):
 
     while True:
         u_input = st.text_input(labele)
