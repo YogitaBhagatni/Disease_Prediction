@@ -26,7 +26,7 @@ selected=option_menu(
 
 if selected=="Home":
   image = Image.open(r'dataset/dr_img.png')
-  image
+  
 
 
 if selected=="Predictions":
