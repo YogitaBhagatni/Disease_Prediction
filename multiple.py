@@ -29,6 +29,16 @@ if selected=="Projects":
 
   parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_model.sav', 'rb'))
 
+  def get_float_input(label, placeholder=""):
+
+    while True:
+        user_input = st.text_input(label, placeholder=placeholder)
+        try:
+            float_value = float(user_input)
+            return float_value
+        except ValueError:
+            st.error("Please enter a valid float number.")
+
   # sidebar for navigation
   with st.sidebar:
       selected = option_menu('Multiple Disease Prediction System',
@@ -52,10 +62,10 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
 
       with col1:
-          Pregnancies = st.text_input('Number of Pregnancies')
+          Pregnancies = get_float_input('Number of Pregnancies')
 
       with col2:
-          Glucose = st.text_input('Glucose Level')
+          Glucose = get_float_input('Glucose Level')
 
       with col3:
           BloodPressure = st.text_input('Blood Pressure value')
