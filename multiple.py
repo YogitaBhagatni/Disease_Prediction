@@ -122,10 +122,10 @@ if selected=="Predictions":
       col1, col2, col3 = st.columns(3)
   
       with col1:
-          age = st.slider('Age',)
+          age = st.slider('Age',1,100)
   
       with col2:
-          sex = st.selectbox('Sex',["0=Female","1=Male"])
+          sex = st.slider('Sex',0,1)
   
       with col3:
           cp = st.text_input('Chest Pain types')
