@@ -23,7 +23,7 @@ selected=option_menu(
   orientation="horizontal",
 )
 if selected=="Home":
-  image = Image.open(r'dataset/dataset/dr_img.png')
+  image = Image.open(r'dataset/dr_img.png')
   image
 if selected=="Predictions":
   # getting the working directory of the main.py
