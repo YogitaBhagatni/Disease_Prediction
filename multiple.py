@@ -7,6 +7,13 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Health Assistant",
                    layout="wide",
                    page_icon="🧑‍⚕️")
+
+st.markdown(
+    """
+    <h1 style='text-align:center;'>Health Assistant</h1>
+    """,
+    unsafe_allow_html=True)
+
 selected=option_menu(
   menu_title=None,
   options=["Home","Predictions","Dataset"],
@@ -16,7 +23,8 @@ selected=option_menu(
   orientation="horizontal",
 )
 if selected=="Home":
-  st.title("Health Assistance ")
+  image = Image.open(r'dataset/dataset/dr_img.png')
+  image
 if selected=="Predictions":
   # getting the working directory of the main.py
   working_dir = os.path.dirname(os.path.abspath(__file__))
