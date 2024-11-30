@@ -76,7 +76,7 @@ if selected=="Projects":
           DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value')
 
       with col2:
-          Age = st.number_input('Age of the Person')
+          Age = st.slider('Age of the Person')
 
 
       # code for Prediction
