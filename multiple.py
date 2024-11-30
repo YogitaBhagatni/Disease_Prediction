@@ -62,12 +62,12 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
 
       with col1:
-          Pregnancies = get_float_input('Number of Pregnancies')
+          Pregnancies = st.text_input('Number of Pregnancies')
       max=set_col1.slider("values",min_value=10,max_value=90)
                         
 
       with col2:
-          Glucose = get_float_input('Glucose Level')
+          Glucose = st.text_input('Glucose Level')
 
       with col3:
           BloodPressure = st.text_input('Blood Pressure value')
