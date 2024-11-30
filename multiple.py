@@ -280,11 +280,11 @@ if selected=="Dataset":
   options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"],
   icons=["clipboard-data","clipboard-data","clipboard-data"])
 
-if selected="Diabetes Data":
+if selected=="Diabetes Data":
   st.dataframe(r'dataset/diabetes')
-if selected="Heart Disease Data":
+if selected=="Heart Disease Data":
   st.dataframe(r'dataset/heart')
-if selected="Parkinsons Disease Data":
+if selected=="Parkinsons Disease Data":
   st.dataframe(r'dataset/parkinson')
   
     
