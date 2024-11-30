@@ -9,7 +9,7 @@ st.set_page_config(page_title="Health Assistant",
                    page_icon="🧑‍⚕️")
 selected=option_menu(
   menu_title=None,
-  options=["Home","Projects","Dataset"],
+  options=["Home","Predictions","Dataset"],
   icons=["house","book","envelope"],
   menu_icon="cast",
   default_index=0,
@@ -17,7 +17,7 @@ selected=option_menu(
 )
 if selected=="Home":
   st.title("Health Assistance 🧑‍⚕️")
-if selected=="Projects":
+if selected=="Predictions":
   # getting the working directory of the main.py
   working_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -261,8 +261,8 @@ if selected=="Projects":
               parkinsons_diagnosis = "The person does not have Parkinson's disease"
   
       st.success(parkinsons_diagnosis)
-  if selected=="Contact":
-    st.title("you have selected Contact")
+  if selected=="Dataset":
+    st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
 
   
 
