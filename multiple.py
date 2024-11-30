@@ -287,7 +287,7 @@ diabetes_data_ = pd.DataFrame(diabetes_data_)
 heart_data_= pd.read_csv('dataset/heart.csv')
 heart_data_ = pd.DataFrame(heart_data_)
 
-parkinson_data_= pd.read_csv('dataset/parkinson.csv')
+parkinson_data_= pd.read_csv('dataset/parkinsons.csv')
 parkinson_data_ = pd.DataFrame(parkinson_data_)
 
 if selected=="Diabetes Data":
