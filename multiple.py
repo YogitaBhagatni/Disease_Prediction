@@ -27,6 +27,8 @@ selected=option_menu(
 if selected=="Home":
   image = Image.open(r'dataset/dr_img.png')
   image
+
+
 if selected=="Predictions":
   # getting the working directory of the main.py
   working_dir = os.path.dirname(os.path.abspath(__file__))
