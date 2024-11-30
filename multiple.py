@@ -134,7 +134,7 @@ if selected=="Predictions":
           trestbps = st.number_input('Resting Blood Pressure',0,200)
   
       with col2:
-          chol = st.numer_input('Serum Cholestoral in mg/dl',0,200)
+          chol = st.number_input('Serum Cholestoral in mg/dl',0,200)
   
       with col3:
           fbs = st.selectbox('Fasting Blood Sugar & gt',["1","0"])
