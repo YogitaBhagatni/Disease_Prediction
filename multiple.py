@@ -275,7 +275,12 @@ if selected=="Predictions":
   
       st.success(parkinsons_diagnosis)
 if selected=="Dataset":
-  st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+  selected=option_menu(
+  menu_title="Records",
+  options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+  
+
+  # st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
 
 
   
