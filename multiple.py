@@ -16,7 +16,7 @@ selected=option_menu(
   orientation="horizontal",
 )
 if selected=="Home":
-  st.title("Health Assistance ",icon="user-md")
+  st.title("Health Assistance ")
 if selected=="Predictions":
   # getting the working directory of the main.py
   working_dir = os.path.dirname(os.path.abspath(__file__))
