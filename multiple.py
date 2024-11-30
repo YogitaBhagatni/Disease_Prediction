@@ -32,7 +32,7 @@ if selected=="Projects":
   def get_float_input(label):
 
     while True:
-        user_input = st.text_input(label, key=label)  # Add a unique key
+        user_input = st.text_input(label)  # Add a unique key
         try:
             float_value = float(user_input)
             return float_value
