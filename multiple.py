@@ -7,6 +7,14 @@ from streamlit_option_menu import option_menu
 st.set_page_config(page_title="Health Assistant",
                    layout="wide",
                    page_icon="🧑‍⚕️")
+selected=option_menu(
+  menu_title=None,
+  options=["Home","Projects","Conatct"],
+  icons=["house","book","envelope"],
+  menu_icon="cast",
+  default_index=0,
+  orientation="horizontal",
+)
 
     
 # getting the working directory of the main.py
