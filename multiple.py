@@ -32,9 +32,9 @@ if selected=="Projects":
   def get_float_input(label):
 
     while True:
-        u_input = st.text_input(labele)
+        user_input = st.text_input(label, key=label)  # Add a unique key
         try:
-            float_value = float(u_input)
+            float_value = float(user_input)
             return float_value
         except ValueError:
             st.error("Please enter a valid float number.")
