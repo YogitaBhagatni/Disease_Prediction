@@ -3,6 +3,7 @@ import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
+import pandas as pd
 
 # Set page configuration
 st.set_page_config(page_title="Health Assistant",
