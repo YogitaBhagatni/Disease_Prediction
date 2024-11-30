@@ -32,7 +32,7 @@ if selected=="Projects":
   def get_float_input(label, placeholder=""):
 
     while True:
-        u_input = st.text_input(label, placeholder=placeholder)
+        u_input = st.text_input(labele)
         try:
             float_value = float(u_input)
             return float_value
