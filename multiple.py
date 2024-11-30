@@ -76,7 +76,7 @@ if selected=="Projects":
           DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value')
 
       with col2:
-          Age = st.number_input('Age of the Person',0,10)
+          Age = st.number_input('Age of the Person',0,100)
 
 
       # code for Prediction
@@ -109,10 +109,10 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
   
       with col1:
-          age = st.text_input('Age')
+          age = st.number_input('Age')
   
       with col2:
-          sex = st.text_input('Sex')
+          sex = st.select_slider('Sex',["Female","Male"])
   
       with col3:
           cp = st.text_input('Chest Pain types')
