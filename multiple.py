@@ -15,9 +15,10 @@ selected=option_menu(
   default_index=0,
   orientation="horizontal",
 )
-
-    
-# getting the working directory of the main.py
+if selected=="Home":
+  st.title("Health Assistance 🧑‍⚕️")
+if selected=="Projects":
+  # getting the working directory of the main.py
 working_dir = os.path.dirname(os.path.abspath(__file__))
 
 # loading the saved models
@@ -256,3 +257,9 @@ if selected == "Parkinsons Prediction":
             parkinsons_diagnosis = "The person does not have Parkinson's disease"
 
     st.success(parkinsons_diagnosis)
+  if selected=="Contact":
+    st.title("you have selected Contact")
+
+  
+
+    
