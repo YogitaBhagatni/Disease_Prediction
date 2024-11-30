@@ -145,7 +145,7 @@ if selected=="Projects":
           ca = st.text_input('Major vessels colored by flourosopy')
   
       with col1:
-          thal = st.selectbox("pick one",[' 0 = normal','1 = fixed defect',' 2 = reversable defect'])
+          thal = st.selectbox("thal",[' 0 = normal','1 = fixed defect',' 2 = reversable defect'])
   
       # code for Prediction
       heart_diagnosis = ''
