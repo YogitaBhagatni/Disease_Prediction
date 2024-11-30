@@ -257,8 +257,8 @@ if selected=="Projects":
               parkinsons_diagnosis = "The person does not have Parkinson's disease"
   
       st.success(parkinsons_diagnosis)
-    if selected=="Contact":
-      st.title("you have selected Contact")
+  if selected=="Contact":
+    st.title("you have selected Contact")
 
   
 
