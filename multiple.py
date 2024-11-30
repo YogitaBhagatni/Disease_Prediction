@@ -30,7 +30,7 @@ if selected == "Projects":
         ["Diabetes Prediction", "Heart Disease Prediction", "Parkinsons Prediction"],
         menu_icon="hospital-fill",
         icons=["activity", "heart", "person"],
-        default_index=0, 1)
+        default_index=0, )
     
 
     # Function to handle input validation and prediction
