@@ -61,7 +61,7 @@ if selected=="Projects":
           Glucose = number_input('Glucose Level')
 
       with col3:
-          BloodPressure = number_input'Blood Pressure value')
+          BloodPressure = number_input('Blood Pressure value')
 
       with col1:
           SkinThickness =number_input('Skin Thickness value')
