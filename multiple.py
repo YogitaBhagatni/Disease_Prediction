@@ -281,13 +281,13 @@ if selected=="Dataset":
   options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"],
   icons=["clipboard-data","clipboard-data","clipboard-data"])
 
-diabetes_data_= pd.read_csv('dataset/diabetes.csv')
+diabetes_data_= pd.read_csv(r'dataset/diabetes.csv')
 diabetes_data_ = pd.DataFrame(diabetes_data_)
 
-heart_data_= pd.read_csv('dataset/heart.csv')
+heart_data_= pd.read_csv(r'dataset/heart.csv')
 heart_data_ = pd.DataFrame(heart_data_)
 
-parkinson_data_= pd.read_csv('dataset/parkinson.csv')
+parkinson_data_= pd.read_csv(r'dataset/parkinson.csv')
 parkinson_data_ = pd.DataFrame(parkinson_data_)
 
 if selected=="Diabetes Data":
