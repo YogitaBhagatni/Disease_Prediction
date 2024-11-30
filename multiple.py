@@ -261,8 +261,9 @@ if selected=="Predictions":
               parkinsons_diagnosis = "The person does not have Parkinson's disease"
   
       st.success(parkinsons_diagnosis)
-  if selected=="Dataset":
-    st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+if selected=="Dataset":
+  st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+
 
   
 
