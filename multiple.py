@@ -54,29 +54,29 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
 
       with col1:
-          Pregnancies = number_input('Number of Pregnancies')
+          Pregnancies = st.number_input('Number of Pregnancies')
                         
 
       with col2:
-          Glucose = number_input('Glucose Level')
+          Glucose = st.number_input('Glucose Level')
 
       with col3:
-          BloodPressure = number_input('Blood Pressure value')
+          BloodPressure = st.number_input('Blood Pressure value')
 
       with col1:
-          SkinThickness =number_input('Skin Thickness value')
+          SkinThickness =st.number_input('Skin Thickness value')
 
       with col2:
-          Insulin = number_input('Insulin Level')
+          Insulin = st.number_input('Insulin Level')
 
       with col3:
-          BMI = number_input('BMI value')
+          BMI = st.number_input('BMI value')
 
       with col1:
-          DiabetesPedigreeFunction = number_input('Diabetes Pedigree Function value')
+          DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value')
 
       with col2:
-          Age = number_input('Age of the Person')
+          Age = st.number_input('Age of the Person')
 
 
       # code for Prediction
