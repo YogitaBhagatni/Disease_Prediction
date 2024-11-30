@@ -32,9 +32,9 @@ if selected=="Projects":
   def get_float_input(label, placeholder=""):
 
     while True:
-        user_input = st.text_input(label, placeholder=placeholder)
+        u_input = st.text_input(label, placeholder=placeholder)
         try:
-            float_value = float(user_input)
+            float_value = float(u_input)
             return float_value
         except ValueError:
             st.error("Please enter a valid float number.")
