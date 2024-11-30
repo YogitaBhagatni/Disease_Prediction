@@ -279,10 +279,18 @@ if selected=="Dataset":
   menu_title="Records",
   options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"],
   icons=["clipboard-data","clipboard-data","clipboard-data"])
+
+if selected="Diabetes Data":
+  st.dataframe(r'dataset/diabetes')
+if selected=","Heart Disease Data":
+  st.dataframe(r'dataset/heart')
+if selected="Parkinsons Disease Data":
+  st.dataframe(r'dataset/parkinson')
+  
     
   
 
-  # st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+ 
 
 
   
