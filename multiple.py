@@ -277,7 +277,9 @@ if selected=="Predictions":
 if selected=="Dataset":
   selected=option_menu(
   menu_title="Records",
-  options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
+  options=["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"],
+  icons=["clipboard-data","clipboard-data","clipboard-data"])
+    
   
 
   # st.selectbox('Records',["Diabetes Data","Heart Disease Data","Parkinsons Disease Data"])
