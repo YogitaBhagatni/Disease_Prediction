@@ -109,10 +109,10 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
   
       with col1:
-          age = st.number_input('Age')
+          age = st.slider('Age',)
   
       with col2:
-          sex = st.select_slider('Sex',["Female","Male"])
+          sex = st.selectbox('Sex',["Female","Male"])
   
       with col3:
           cp = st.text_input('Chest Pain types')
