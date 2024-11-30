@@ -29,15 +29,7 @@ if selected=="Projects":
 
   parkinsons_model = pickle.load(open(f'{working_dir}/saved_models/parkinsons_model.sav', 'rb'))
 
-  def get_float_input(label):
-
-    while True:
-        user_input = st.text_input(label)  # Add a unique key
-        try:
-            float_value = float(user_input)
-            return float_value
-        except ValueError:
-            st.error("Please enter a valid float number.")
+  
 
   # sidebar for navigation
   with st.sidebar:
@@ -62,30 +54,29 @@ if selected=="Projects":
       col1, col2, col3 = st.columns(3)
 
       with col1:
-          Pregnancies = st.text_input('Number of Pregnancies')
-      max=set_col1.slider("values",min_value=10,max_value=90)
+          Pregnancies = number_input('Number of Pregnancies')
                         
 
       with col2:
-          Glucose = st.text_input('Glucose Level')
+          Glucose = number_input('Glucose Level')
 
       with col3:
-          BloodPressure = st.text_input('Blood Pressure value')
+          BloodPressure = number_input'Blood Pressure value')
 
       with col1:
-          SkinThickness = st.text_input('Skin Thickness value')
+          SkinThickness =number_input('Skin Thickness value')
 
       with col2:
-          Insulin = st.text_input('Insulin Level')
+          Insulin = number_input('Insulin Level')
 
       with col3:
-          BMI = st.text_input('BMI value')
+          BMI = number_input('BMI value')
 
       with col1:
-          DiabetesPedigreeFunction = st.text_input('Diabetes Pedigree Function value')
+          DiabetesPedigreeFunction = number_input('Diabetes Pedigree Function value')
 
       with col2:
-          Age = st.text_input('Age of the Person')
+          Age = number_input('Age of the Person')
 
 
       # code for Prediction
