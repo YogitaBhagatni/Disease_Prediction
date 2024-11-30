@@ -282,7 +282,7 @@ if selected=="Dataset":
 
 if selected="Diabetes Data":
   st.dataframe(r'dataset/diabetes')
-if selected=","Heart Disease Data":
+if selected="Heart Disease Data":
   st.dataframe(r'dataset/heart')
 if selected="Parkinsons Disease Data":
   st.dataframe(r'dataset/parkinson')
