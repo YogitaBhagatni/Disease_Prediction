@@ -9,7 +9,7 @@ st.set_page_config(page_title="Health Assistant",
                    page_icon="🧑‍⚕️")
 selected=option_menu(
   menu_title=None,
-  options=["Home","Projects","Conatct"],
+  options=["Home","Projects","Dataset"],
   icons=["house","book","envelope"],
   menu_icon="cast",
   default_index=0,
@@ -76,7 +76,7 @@ if selected=="Projects":
           DiabetesPedigreeFunction = st.number_input('Diabetes Pedigree Function value')
 
       with col2:
-          Age = st.slider('Age of the Person')
+          Age = st.number_input('Age of the Person',0,10)
 
 
       # code for Prediction
